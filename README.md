@@ -10,7 +10,7 @@ using the library is run again. The Arduino library manager provides basic
 dependency management allowing users to search and download libraries hosted on
 GitHub. However, there is no concept of a package or dependency where a library
 can be "installed" on the system along with its dependencies. Moreover, the
-Arduino build process relative imports from directories outside the sketch
+Arduino build process forbids relative imports from directories outside the sketch
 directory, where the `.ino` file is found. These restrictions in the
 Arduino code compilation process leads to difficulty making larger projects
 with a structured code base where libraries and modules can be used, actively
@@ -23,7 +23,7 @@ manager for Arduino projects, giving developers the ability to structure
 their projects more efficiently and clearly using `ardpack` packages to specify
 a list of dependencies. The end user is also able to install the package and its
 dependencies automatically in the command line on a per project basis. `ardpack`
-not only assists developers in structuring large Arduino projects but the end
+not only assists developers in structuring large Arduino projects but assists the end
 user as well by streamlining the installation of any library and its
 dependencies into a single command.
 
